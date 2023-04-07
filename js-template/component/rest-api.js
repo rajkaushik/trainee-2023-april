@@ -7,7 +7,24 @@ async function fetchPosts() {
 }
 fetchPosts();
 
-// why to write Arrow function
+// handle error if occured! ==========
+// function fetchPosts() {
+//     fetch('https://jsonplaceholder.typicode.com/post?limit=10')
+//     .then((res) => {
+//         if(res.ok){
+//             return res.json();
+//         }
+//         throw new Error('Something went wrong')
+//     })
+//     .then(responseJson => console.log(responseJson))
+//     .catch(error => {
+//         console.log(error);
+//     })     
+// }
+fetchPosts();
+
+
+// why to write Arrow function ==========
 // const fetchPosts = async () => {
 //     console.log('2');
 //      data = await fetch('https://jsonplaceholder.typicode.com/posts')
